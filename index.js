@@ -4,6 +4,9 @@ const app = express();
 const port = 3000;
 
 import UsuarioRouters from "./Routes/Usuario.js";
+import RecordatorioRouters from "./Routes/Recordatorios.js";
+
+
 
 
 
@@ -20,6 +23,7 @@ app.get("/", (req, res) => {
     res.send("API working");
 });
 
+app.use("/recordatorio", RecordatorioRouters);
 app.use("/usuario", UsuarioRouters);
 
 app.listen(port, () => {

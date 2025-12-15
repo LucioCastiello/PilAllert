@@ -2,23 +2,21 @@
   "name": "pilallert",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+  "homepage": "https://github.com/LucioCastiello/PilAllert#readme",
+  "bugs": {
+    "url": "https://github.com/LucioCastiello/PilAllert/issues"
   },
   "repository": {
     "type": "module",
     "url": "git+https://github.com/LucioCastiello/PilAllert.git"
   },
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LucioCastiello/PilAllert/issues"
-  },
-  "homepage": "https://github.com/LucioCastiello/PilAllert#readme",
-  "devDependencies": {
-    "nodemon": "^3.1.11"
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -26,5 +24,8 @@
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
