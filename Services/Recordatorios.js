@@ -8,7 +8,8 @@ const insertRecordatorio = async (recordatorio) => {
         INSERT INTO public."Recordatorio"
         ("NombreMedicamento", "Mail_Usuario", "Fecha", "Dosis")
         VALUES ($1, $2, $3, $4)`,
-        [recordatorio.nombreMed, recordatorio.mail_usuario, new Date(), recordatorio.dosis]);
+        [recordatorio.nombreMed, recordatorio.mail_usuario, recordatorio.fecha, recordatorio.dosis]);
+        console.log(rows)
       return rows;
     } catch (err) {
       throw err; 
@@ -21,7 +22,7 @@ const insertRecordatorio = async (recordatorio) => {
     console.log(mail_usuario,'lkj')
 
     try {
-        const rows = await pool.query(`
+        const {rows} = await pool.query(`
     SELECT *
          FROM public."Recordatorio" 
          WHERE "Mail_Usuario"=$1`,

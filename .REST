@@ -27,7 +27,8 @@ Content-Type: application/json
 {
     "nombreMed": "Ibuprofeno",
   "mail_usuario": "asa@gmail.com",
-  "dosis": 1
+  "dosis": 1,
+  "fecha": "12:30 2025/06/15"
 
 }
 
